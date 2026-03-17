@@ -5,16 +5,14 @@
 ## 项目结构
 
 ```
-social-bot-detection/
-├── data/             # 数据目录
-├── models/           # 模型保存目录
+TRACE-Bot/
 ├── src/              # 源代码目录
 │   ├── data_process.py         # 数据处理和清洗
 │   ├── behavior_sequence.py    # 行为序列提取
 │   ├── GLTR_detection.py       # GLTR模型检测
 │   ├── fast_detectgpt.py        # Fast DetectGPT模型检测
 │   ├── feature_integration.py  # 特征整合
-│   └── feature_fusion.py       # 特征融合和模型检测
+│   └── fusion_detection.py       # 特征融合和模型检测
 ├── README.md         # 项目说明
 └── requirements.txt  # 依赖项
 ```
@@ -44,10 +42,20 @@ social-bot-detection/
 - 提取用户个人信息特征
 - 整合所有特征为一个特征数据文件
 
-### 6. 特征融合和模型检测 (`src/feature_fusion.py`)
+### 6. 特征融合和模型检测 (`src/fusion_detection.py`)
 - 使用GPT-2作为文本语义编码器
 - 融合行为特征和文本特征
 - 训练和评估社交机器人检测模型
+
+
+## 数据集
+
+### Fox8-23
+> https://zenodo.org/records/8035290
+
+### BotSim-24
+> https://github.com/QQQQQQBY/BotSim/tree/main/BotSim-24-Dataset
+
 
 ## 运行流程
 
