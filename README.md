@@ -1,54 +1,53 @@
 # TRACE-Bot
 
-本项目是一个基于多特征融合的社交机器人检测模型，通过整合用户行为序列、AIGC检测评分和用户个人信息等多种特征，实现高精度的社交机器人检测。
+TRACE-Bot is a unified dual-channel framework capable of jointly modeling semantic artifacts and behavioral patterns enhanced by AI-Generated Content (AIGC). TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
-## 项目结构
+## Project Structure
 
 ```
 TRACE-Bot/
-├── src/              # 源代码目录
-│   ├── data_process.py         # 数据处理和清洗
-│   ├── behavior_sequence.py    # 行为序列提取
-│   ├── GLTR_detection.py       # GLTR模型检测
-│   ├── fast_detectgpt.py        # Fast DetectGPT模型检测
-│   ├── feature_integration.py  # 特征整合
-│   └── fusion_detection.py       # 特征融合和模型检测
-├── README.md         # 项目说明
-└── requirements.txt  # 依赖项
+├── src/              # Source code directory
+│   ├── data_process.py         # Data processing and cleaning
+│   ├── behavior_sequence.py    # Behavior sequence extraction
+│   ├── GLTR_detection.py       # GLTR model detection
+│   ├── fast_detectgpt.py        # Fast DetectGPT model detection
+│   ├── feature_integration.py  # Feature integration
+│   └── fusion_detection.py       # Feature fusion and model detection
+├── README.md         # Project documentation
+└── requirements.txt  # Dependencies
 ```
 
-## 功能模块
+## Functional Modules
 
-### 1. 数据处理和清洗 (`src/data_process.py`)
-- 处理NDJSON格式数据
-- 转换为CSV格式
-- 展开嵌套的JSON数据结构
-- 数据清洗和预处理
+### 1. Data Processing and Cleaning (`src/data_process.py`)
+- Processes NDJSON format data
+- Converts data to CSV format
+- Flattens nested JSON structures
+- Performs data cleaning and preprocessing
 
-### 2. 行为序列提取 (`src/behavior_sequence.py`)
-- 提取用户的推文类型（原创、转发、回复）
-- 构建行为序列
-- 计算序列压缩率等特征
+### 2. Behavior Sequence Extraction (`src/behavior_sequence.py`)
+- Extracts user tweet types (original, retweet, reply)
+- Constructs behavior sequences
+- Calculates features such as sequence compression ratio
 
-### 3. AIGC检测 - GLTR (`src/GLTR_detection.py`)
-- 使用BERT和GPT-2模型计算文本概率
-- 生成GLTR检测评分作为特征
+### 3. AIGC Detection - GLTR (`src/GLTR_detection.py`)
+- Calculates text probabilities using BERT and GPT-2 models
+- Generates GLTR detection scores as features
 
-### 4. AIGC检测 - Fast DetectGPT (`src/fast_detectgpt.py`)
-- 使用Fast DetectGPT模型检测文本
-- 生成检测评分作为特征
+### 4. AIGC Detection - Fast DetectGPT (`src/fast_detectgpt.py`)
+- Detects text using the Fast DetectGPT model
+- Generates detection scores as features
 
-### 5. 特征整合 (`src/feature_integration.py`)
-- 提取用户个人信息特征
-- 整合所有特征为一个特征数据文件
+### 5. Feature Integration (`src/feature_integration.py`)
+- Extracts user personal information features
+- Integrates all features into a single feature data file
 
-### 6. 特征融合和模型检测 (`src/fusion_detection.py`)
-- 使用GPT-2作为文本语义编码器
-- 融合行为特征和文本特征
-- 训练和评估社交机器人检测模型
+### 6. Feature Fusion and Model Detection (`src/fusion_detection.py`)
+- Uses GPT-2 as the text semantic encoder
+- Fuses behavioral features and text features
+- Trains and evaluates the social bot detection model
 
-
-## 数据集
+## Datasets
 
 ### Fox8-23
 > https://zenodo.org/records/8035290
@@ -56,16 +55,15 @@ TRACE-Bot/
 ### BotSim-24
 > https://github.com/QQQQQQBY/BotSim/tree/main/BotSim-24-Dataset
 
+## Workflow
 
-## 运行流程
+1. **Data Processing**: Run `src/data_process.py` to process raw data.
+2. **Behavior Sequence Extraction**: Run `src/behavior_sequence.py` to extract behavior sequence features.
+3. **AIGC Detection**: Run `src/GLTR_detection.py` and `src/fast_detectgpt.py` separately to generate AIGC detection features.
+4. **Feature Integration**: Run `src/feature_integration.py` to integrate all features.
+5. **Model Training and Detection**: Run `src/fusion_detection.py` (Note: corrected from `feature_fusion.py` in original text to match file structure) to train the model and perform detection.
 
-1. **数据处理**：运行 `src/data_process.py` 处理原始数据
-2. **行为序列提取**：运行 `src/behavior_sequence.py` 提取行为序列特征
-3. **AIGC检测**：分别运行 `src/GLTR_detection.py` 和 `src/fast_detectgpt.py` 生成AIGC检测特征
-4. **特征整合**：运行 `src/feature_integration.py` 整合所有特征
-5. **模型训练和检测**：运行 `src/feature_fusion.py` 训练模型并进行检测
-
-## 依赖项
+## Dependencies
 
 - Python 3.8+
 - pandas
@@ -75,17 +73,17 @@ TRACE-Bot/
 - scikit-learn
 - tqdm
 
-## 模型性能
+## Model Performance
 
-在测试集上的性能指标：
+Performance metrics on the test set:
 - Accuracy: 0.9846
 - Precision: 0.9825
 - Recall: 0.9868
 - F1-score: 0.9847
 - ROC-AUC: 0.9986
 
-## 注意事项
+## Notes
 
-- 运行AIGC检测模型需要较大的计算资源，建议在GPU环境下运行
-- 首次运行时会自动下载所需的预训练模型
-- 数据处理和特征提取步骤可能需要较长时间，具体取决于数据规模
+- Running AIGC detection models requires significant computational resources; execution on a GPU environment is recommended.
+- Required pretrained models will be automatically downloaded upon the first run.
+- Data processing and feature extraction steps may take considerable time, depending on the data scale.
