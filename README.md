@@ -17,6 +17,15 @@ TRACE-Bot/
 └── requirements.txt  # Dependencies
 ```
 
+## Datasets
+
+### Fox8-23
+> https://zenodo.org/records/8035290
+
+### BotSim-24
+> https://github.com/QQQQQQBY/BotSim/tree/main/BotSim-24-Dataset
+
+
 ## Functional Modules
 
 ### 1. Data Processing and Cleaning (`src/data_process.py`)
@@ -46,14 +55,6 @@ TRACE-Bot/
 - Uses GPT-2 as the text semantic encoder
 - Fuses behavioral features and text features
 - Trains and evaluates the social bot detection model
-
-## Datasets
-
-### Fox8-23
-> https://zenodo.org/records/8035290
-
-### BotSim-24
-> https://github.com/QQQQQQBY/BotSim/tree/main/BotSim-24-Dataset
 
 ## Workflow
 
