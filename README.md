@@ -74,15 +74,6 @@ TRACE-Bot/
 - scikit-learn
 - tqdm
 
-## Model Performance
-
-Performance metrics on the test set:
-- Accuracy: 0.9846
-- Precision: 0.9825
-- Recall: 0.9868
-- F1-score: 0.9847
-- ROC-AUC: 0.9986
-
 ## Notes
 
 - Running AIGC detection models requires significant computational resources; execution on a GPU environment is recommended.
