@@ -22,9 +22,9 @@ def extract_user_behavior_sequences(df, user_id_col='user_id'):
 
 def generate_behavior_sequence(tweet_types):
     type_mapping = {
-        'Original': 'T',
+        'Original': 'O',
         'Retweet': 'R',
-        'Reply': 'A'
+        'Reply': 'R'
     }
     return ''.join([type_mapping.get(tweet_type, '?') for tweet_type in tweet_types])
 
