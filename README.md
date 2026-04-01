@@ -2,6 +2,8 @@
 
 TRACE-Bot is a unified dual-channel framework capable of jointly modeling semantic artifacts and behavioral patterns enhanced by AI-Generated Content (AIGC). TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
+![项目截图](https://github.com/forthgoer1/TRACE-Bot/blob/main/model.svg)
+
 ## Project Structure
 
 ```
