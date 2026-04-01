@@ -2,7 +2,7 @@
 
 TRACE-Bot is a unified dual-channel framework capable of jointly modeling semantic artifacts and behavioral patterns enhanced by AI-Generated Content (AIGC). TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
-![项目截图](https://raw.githubusercontent.com/forthgoer1/TRACE-Bot/main/model.svg)
+![模型图](https://raw.githubusercontent.com/forthgoer1/TRACE-Bot/main/model.svg)
 
 The Data Preparation module handles data collection and preprocessing to ensure structured inputs. The Feature Processing module extracts multidimensional textual and behavioral features, capturing semantic traces and interaction patterns. Subsequently, the Feature Fusion module integrates these heterogeneous representations to enhance discriminative expressiveness. Finally, the Detection module utilizes the fused vectors for precise identification and classification of LLM-driven social bots.
 
@@ -29,7 +29,9 @@ TRACE-Bot/
 The Fox8-23 dataset was constructed in 2023 by Yang et al. from Northeastern University. The authors observed that commercial LLMs (e.g., ChatGPT) employ reinforcement learning from human feedback (RLHF) as a safety mechanism: when prompted with policy-violating requests (e.g., harmful or false content), the model responds with a standardized disclaimer such as "as an AI language model, I cannot...". They hypothesized that LLM-driven bots, lacking proper content filtering, might inadvertently leak such disclaimers in their tweets, thereby revealing their non-human origin. Leveraging this insight, the team used Twitter API v2 to collect all tweets containing the phrase as an AI language model posted between October 1, 2022, and April 23, 2023. This yielded 12,226 tweets from 9,112 unique users. To validate labels, 100 users were randomly sampled and manually annotated; 24\% were confirmed as LLM-driven bots, while 76% were likely human. Additionally, the dataset includes 1,140 genuine human accounts (285 each) randomly drawn from four established bot datasets: Botometer-Feedback-2019, Gilani-17, Midterm-2018, and Varol-Icwsm.
 
 ### BotSim-24
+
 > https://github.com/QQQQQQBY/BotSim/tree/main/BotSim-24-Dataset
+
 The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute of Information Engineering, Chinese Academy of Sciences. To systematically study the security risks posed by LLM-driven bots, the authors developed BotSim, a novel simulation framework that leverages LLMs to emulate malicious social botnets. BotSim models real-world information diffusion and user interaction dynamics within a virtual social environment populated by intelligent agents and simulated human users, enabling high-fidelity replication of complex online behaviors. Built upon this framework, BotSim-24 is a large-scale, high-realism dataset that records multi-round interaction trajectories, content generation logs, and evolving social relationships of LLM-driven agents. It serves as a valuable benchmark for research on bot detection, disinformation propagation, and human-AI hybrid network modeling.
 
 ## Functional Modules
