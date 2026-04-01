@@ -4,6 +4,8 @@ TRACE-Bot is a unified dual-channel framework capable of jointly modeling semant
 
 ![项目截图](https://raw.githubusercontent.com/forthgoer1/TRACE-Bot/main/model.svg)
 
+The Data Preparation module handles data collection and preprocessing to ensure structured inputs. The Feature Processing module extracts multidimensional textual and behavioral features, capturing semantic traces and interaction patterns. Subsequently, the Feature Fusion module integrates these heterogeneous representations to enhance discriminative expressiveness. Finally, the Detection module utilizes the fused vectors for precise identification and classification of LLM-driven social bots.
+
 ## Project Structure
 
 ```
