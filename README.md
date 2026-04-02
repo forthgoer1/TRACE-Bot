@@ -71,11 +71,11 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
 3. **AIGC Detection**:
    - GLTR Features:
      - Download the BERT and GPT-2 models from [Hugging Face](https://huggingface.co/).
-     - Run src/GLTR_detection.py to generate features.
+     - Run `src/GLTR_detection.py` to generate features.
    - Fast DetectGPT Features:
      - Download the source code from the [Fast DetectGPT Github repository](https://github.com/baoguangsheng/fast-detect-gpt).
      - Ensure the source code is located in the correct directory.
-     - Run src/fast_detectgpt.py to generate features.
+     - Run `src/fast_detectgpt.py` to generate features.
 5. **Feature Integration**: Run `src/feature_integration.py` to integrate all features.
 6. **Model Training and Detection**: Run `src/fusion_detection.py` (Note: corrected from `feature_fusion.py` in original text to match file structure) to train the model and perform detection.
 
