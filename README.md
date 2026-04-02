@@ -14,9 +14,9 @@ TRACE-Bot/
 │   ├── data_process.py         # Data processing and cleaning
 │   ├── behavior_sequence.py    # Behavior sequence extraction
 │   ├── GLTR_detection.py       # GLTR model detection
-│   ├── fast_detectgpt.py        # Fast DetectGPT model detection
+│   ├── fast_detectgpt.py       # Fast DetectGPT model detection
 │   ├── feature_integration.py  # Feature integration
-│   └── fusion_detection.py       # Feature fusion and model detection
+│   └── fusion_detection.py     # Feature fusion and model detection
 ├── README.md         # Project documentation
 └── requirements.txt  # Dependencies
 ```
