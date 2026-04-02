@@ -70,10 +70,10 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
 2. **Behavior Sequence Extraction**: Run `src/behavior_sequence.py` to extract behavior sequence features.
 3. **AIGC Detection**:
    - GLTR Features:
-     - Download the BERT and GPT-2 models from Hugging Face.
+     - Download the BERT and GPT-2 models from [Hugging Face](https://huggingface.co/).
      - Run src/GLTR_detection.py to generate features.
    - Fast DetectGPT Features:
-     - Download the source code from the Fast DetectGPT GitHub repository.
+     - Download the source code from the [Fast DetectGPT Github repository](https://github.com/baoguangsheng/fast-detect-gpt)
      - Ensure the source code is located in the correct directory.
      - Run src/fast_detectgpt.py to generate features.
 5. **Feature Integration**: Run `src/feature_integration.py` to integrate all features.
