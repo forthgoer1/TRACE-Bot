@@ -2,7 +2,7 @@
 
 TRACE-Bot is a unified dual-channel framework capable of jointly modeling semantic artifacts and behavioral patterns enhanced by AI-Generated Content (AIGC). TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
-![模型图](https://raw.githubusercontent.com/forthgoer1/TRACE-Bot/main/model.svg)
+![模型图](./model.svg)
 
 The Data Preparation module handles data collection and preprocessing to ensure structured inputs. The Feature Processing module extracts multidimensional textual and behavioral features, capturing semantic traces and interaction patterns. Subsequently, the Feature Fusion module integrates these heterogeneous representations to enhance discriminative expressiveness. Finally, the Detection module utilizes the fused vectors for precise identification and classification of LLM-driven social bots.
 
@@ -73,7 +73,7 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
      - Download the BERT and GPT-2 models from [Hugging Face](https://huggingface.co/).
      - Run src/GLTR_detection.py to generate features.
    - Fast DetectGPT Features:
-     - Download the source code from the [Fast DetectGPT Github repository](https://github.com/baoguangsheng/fast-detect-gpt)
+     - Download the source code from the [Fast DetectGPT Github repository](https://github.com/baoguangsheng/fast-detect-gpt).
      - Ensure the source code is located in the correct directory.
      - Run src/fast_detectgpt.py to generate features.
 5. **Feature Integration**: Run `src/feature_integration.py` to integrate all features.
