@@ -10,6 +10,9 @@ The Data Preparation module handles data collection and preprocessing to ensure 
 
 ```
 TRACE-Bot/
+├── src/              # Data directory
+│   ├── Fox8-23_Data            # Fox8-23 Data
+│   └── BotSim-24_Data.zip      # BotSim-24 Data
 ├── src/              # Source code directory
 │   ├── data_process.py         # Data processing and cleaning
 │   ├── behavior_sequence.py    # Behavior sequence extraction
@@ -18,6 +21,7 @@ TRACE-Bot/
 │   ├── feature_integration.py  # Feature integration
 │   └── fusion_detection.py     # Feature fusion and model detection
 ├── README.md         # Project documentation
+├── model.svg         # Model architecture diagram
 └── requirements.txt  # Dependencies
 ```
 
