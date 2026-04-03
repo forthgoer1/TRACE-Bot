@@ -14,6 +14,7 @@ This work has been submitted to arXiv. If you find TRACE-Bot useful in your rese
   year={2026},
   url={https://arxiv.org/abs/2604.02147}
 }
+```
 
 TRACE-Bot is a unified dual-channel framework specifically engineered to profile and detect **LLM-driven social bots**. It jointly models implicit semantic representations and AIGC-enhanced behavioral patterns to capture the sophisticated characteristics of these emerging threats. TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
