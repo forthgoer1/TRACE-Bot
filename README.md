@@ -2,20 +2,6 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2604.02147-b31b1b.svg)](https://arxiv.org/abs/2604.02147)
 
-## Paper
-
-This work has been submitted to arXiv. If you find TRACE-Bot useful in your research, please cite our paper:
-
-```bibtex
-@article{tracebot2026,
-  title={TRACE-Bot: Detecting Emerging LLM-Driven Social Bots via Implicit Semantic Representations and AIGC-Enhanced Behavioral Patterns},
-  author={Zhongbo Wang, Zhiyu Lin, Zhu Wang and Haizhou Wang},
-  journal={arXiv preprint arXiv:2604.02147},
-  year={2026},
-  url={https://arxiv.org/abs/2604.02147}
-}
-```
-
 TRACE-Bot is a unified dual-channel framework specifically engineered to profile and detect **LLM-driven social bots**. It jointly models implicit semantic representations and AIGC-enhanced behavioral patterns to capture the sophisticated characteristics of these emerging threats. TRACE-Bot constructs fine-grained representations from heterogeneous sources, including personal information data, interaction behavior data, and tweet data. The framework employs a dual-channel architecture: one channel captures linguistic artifacts via a pretrained language model, while the other captures behavioral irregularities through multidimensional activity features, augmented by signals from state-of-the-art AIGC detectors. Subsequently, the fused representations are classified via a lightweight prediction head.
 
 ![模型图](./model.svg)
@@ -114,3 +100,17 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
 - Running AIGC detection models requires significant computational resources; execution on a GPU environment is recommended.
 - Required pretrained models will be automatically downloaded upon the first run.
 - Data processing and feature extraction steps may take considerable time, depending on the data scale.
+
+## Paper
+
+This work has been submitted to arXiv. If you find TRACE-Bot useful in your research, please cite our paper:
+
+```bibtex
+@article{tracebot2026,
+  title={TRACE-Bot: Detecting Emerging LLM-Driven Social Bots via Implicit Semantic Representations and AIGC-Enhanced Behavioral Patterns},
+  author={Zhongbo Wang, Zhiyu Lin, Zhu Wang and Haizhou Wang},
+  journal={arXiv preprint arXiv:2604.02147},
+  year={2026},
+  url={https://arxiv.org/abs/2604.02147}
+}
+```
