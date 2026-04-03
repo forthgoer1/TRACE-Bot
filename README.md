@@ -101,7 +101,7 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
 - Required pretrained models will be automatically downloaded upon the first run.
 - Data processing and feature extraction steps may take considerable time, depending on the data scale.
 
-## Paper
+## Cite
 
 This work has been submitted to arXiv. If you find TRACE-Bot useful in your research, please cite our paper:
 
