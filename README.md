@@ -106,11 +106,13 @@ The BotSim-24 dataset was introduced in 2024 by Qiao et al. from the Institute o
 This work has been submitted to arXiv. If you find TRACE-Bot useful in your research, please cite our paper:
 
 ```bibtex
-@article{tracebot2026,
-  title={TRACE-Bot: Detecting Emerging LLM-Driven Social Bots via Implicit Semantic Representations and AIGC-Enhanced Behavioral Patterns},
-  author={Zhongbo Wang, Zhiyu Lin, Zhu Wang and Haizhou Wang},
-  journal={arXiv preprint arXiv:2604.02147},
-  year={2026},
-  url={https://arxiv.org/abs/2604.02147}
+@misc{wang2026tracebotdetectingemergingllmdriven,
+      title={TRACE-Bot: Detecting Emerging LLM-Driven Social Bots via Implicit Semantic Representations and AIGC-Enhanced Behavioral Patterns}, 
+      author={Zhongbo Wang and Zhiyu Lin and Zhu Wang and Haizhou Wang},
+      year={2026},
+      eprint={2604.02147},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2604.02147}, 
 }
 ```
