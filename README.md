@@ -108,7 +108,7 @@ This work has been submitted to arXiv. If you find TRACE-Bot useful in your rese
 ```bibtex
 @misc{wang2026tracebotdetectingemergingllmdriven,
       title={TRACE-Bot: Detecting Emerging LLM-Driven Social Bots via Implicit Semantic Representations and AIGC-Enhanced Behavioral Patterns}, 
-      author={Zhongbo Wang and Zhiyu Lin and Zhu Wang and Haizhou Wang},
+      author={Zhongbo Wang, Zhiyu Lin, Zhu Wang and Haizhou Wang},
       year={2026},
       eprint={2604.02147},
       archivePrefix={arXiv},
